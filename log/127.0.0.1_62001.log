@@ -1,0 +1,194 @@
+[36minfo[39m: Welcome to Appium v1.4.16 (REV ae6877eff263066b26328d457bd285c0cc62430d)
+[36minfo[39m: Appium REST http interface listener started on 0.0.0.0:4450
+[36minfo[39m: [debug] Non-default server args: {"udid":"127.0.0.1:62001","port":4450,"bootstrapPort":2241}
+[36minfo[39m: Console LogLevel: debug
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m [90m{"desiredCapabilities":{"deviceName":"127.0.0.1:62001","udid":"127.0.0.1:62001","newCommandTimeout":300,"platformVersion":"4.4.2","appPackage":"com.supernano.mt","platformName":"Android","appActivity":"com.supernano.mt.UnityPlayerNativeActivity"}}[39m
+[36minfo[39m: Client User-Agent string: Python-urllib/2.7
+[36minfo[39m: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+[36minfo[39m: [debug] Creating new appium session 15eb09c4-b5f0-4d32-a5a1-03673456f6ec
+[36minfo[39m: Starting android appium
+[36minfo[39m: [debug] Getting Java version
+[36minfo[39m: Java version is: 1.8.0_11
+[36minfo[39m: [debug] Checking whether adb is present
+[36minfo[39m: [debug] Using adb from D:\Android\sdk\platform-tools\adb.exe
+[33mwarn[39m: No app capability, can't parse package/activity
+[36minfo[39m: [debug] Using fast reset? true
+[36minfo[39m: [debug] Preparing device for session
+[36minfo[39m: [debug] Not checking whether app is present since we are assuming it's already on the device
+[36minfo[39m: Retrieving device
+[36minfo[39m: [debug] Trying to find a connected android device
+[36minfo[39m: [debug] Getting connected devices...
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe devices
+[36minfo[39m: [debug] 2 device(s) connected
+[36minfo[39m: Found device 127.0.0.1:62001
+[36minfo[39m: [debug] Setting device id to 127.0.0.1:62001
+[36minfo[39m: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 wait-for-device
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "echo 'ready'"
+[36minfo[39m: [debug] Starting logcat capture
+[36minfo[39m: [debug] Getting device API level
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "getprop ro.build.version.sdk"
+[36minfo[39m: [debug] Device is at API Level 19
+[36minfo[39m: Device API level is: 19
+[36minfo[39m: [debug] Extracting strings for language: default
+[36minfo[39m: [debug] Apk doesn't exist locally
+[36minfo[39m: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "rm -rf /data/local/tmp/strings.json"
+[36minfo[39m: [debug] Not uninstalling app since server not started with --full-reset
+[36minfo[39m: [debug] Skipping install since we launched with a package instead of an app path
+[36minfo[39m: [debug] Forwarding system:2241 to device:4724
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 forward tcp:2241 tcp:4724
+[36minfo[39m: [debug] Pushing appium bootstrap to device...
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 push "D:\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+[36minfo[39m: [debug] Pushing settings apk to device...
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 install "D:\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+[36minfo[39m: [debug] Pushing unlock helper app to device...
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 install "D:\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+[36minfo[39m: Starting App
+[36minfo[39m: [debug] Attempting to kill all 'uiautomator' processes
+[36minfo[39m: [debug] Getting all processes with 'uiautomator'
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "ps 'uiautomator'"
+[36minfo[39m: [debug] No matching processes found
+[36minfo[39m: [debug] Running bootstrap
+[36minfo[39m: [debug] spawning: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.supernano.mt -e disableAndroidWatchers false
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1[39m
+[36minfo[39m: [debug] [90m[UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1[39m
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Loading json...
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+[36minfo[39m: [debug] Waking up device if it's not alive
+[36minfo[39m: [debug] Pushing command to appium work queue: ["wake",{}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Client connected
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "dumpsys window"
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: wake
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+[36minfo[39m: [debug] Screen already unlocked, continuing.
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+[36minfo[39m: [debug] dataDir set to: /data
+[36minfo[39m: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":"\/data","status":0}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+[36minfo[39m: [debug] Getting device API level
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "getprop ro.build.version.sdk"
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":false,"status":0}
+[36minfo[39m: [debug] Device is at API Level 19
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.supernano.mt/com.supernano.mt.UnityPlayerNativeActivity"
+[36minfo[39m: [debug] Waiting for pkg "com.supernano.mt" and activity "com.supernano.mt.UnityPlayerNativeActivity" to be focused
+[36minfo[39m: [debug] Getting focused package and activity
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "dumpsys window windows"
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "getprop ro.build.version.release"
+[36minfo[39m: [debug] Device is at release version 4.4.2
+[36minfo[39m: [debug] Device launched! Ready for commands
+[36minfo[39m: [debug] Setting command timeout to 300 secs
+[36minfo[39m: [debug] Appium session started with sessionId 15eb09c4-b5f0-4d32-a5a1-03673456f6ec
+[36minfo[39m: [37m<-- POST /wd/hub/session [39m[36m303[39m[90m 4891.859 ms - 74[39m [90m[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec[39m [90m{}[39m
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"4.4.2","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"127.0.0.1:62001","udid":"127.0.0.1:62001","newCommandTimeout":300,"platformVersion":"4.4.2","appPackage":"com.supernano.mt","platformName":"Android","appActivity":"com.supernano.mt.UnityPlayerNativeActivity"},"deviceName":"127.0.0.1:62001","udid":"127.0.0.1:62001","newCommandTimeout":300,"appPackage":"com.supernano.mt","platformName":"Android","appActivity":"com.supernano.mt.UnityPlayerNativeActivity"},"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec [39m[32m200[39m[90m 5.718 ms - 747[39m [90m{"status":0,"value":{"platform":"LINUX","browserName":"Android","platformVersion":"4.4.2","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"deviceName":"127.0.0.1:62001","udid":"127.0.0.1:62001","newCommandTimeout":300,"platformVersion":"4.4.2","appPackage":"com.supernano.mt","platformName":"Android","appActivity":"com.supernano.mt.UnityPlayerNativeActivity"},"deviceName":"127.0.0.1:62001","udid":"127.0.0.1:62001","newCommandTimeout":300,"appPackage":"com.supernano.mt","platformName":"Android","appActivity":"com.supernano.mt.UnityPlayerNativeActivity"},"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":{"width":1440,"height":900},"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"width":1440,"height":900},"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/window/current/size [39m[32m200[39m[90m 10.820 ms - 99[39m [90m{"status":0,"value":{"width":1440,"height":900},"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/window/current/size[39m [90m{}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["getDeviceSize"]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDeviceSize","params":{}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: getDeviceSize
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":{"width":1440,"height":900},"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":{"width":1440,"height":900},"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/window/current/size [39m[32m200[39m[90m 17.142 ms - 99[39m [90m{"status":0,"value":{"width":1440,"height":900},"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot[39m [90m{}[39m
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 pull /data/local/tmp/screenshot.png "C:\\Users\\liujing1\\AppData\\Local\\Temp\\appium116215-5832-1og41ip.png"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy0vVmvbcmW3/UbETHnanZz2sybt+qWq3HJTSHLCPHEEzzRCAkkhMEuKBkhBAjwGw/YPCA+BD2CR3gHhAUSj7ZASBjZBqts32pu3sw8Z5/drb26OWfE4GFEzBlz7bVP5i2LlTp5zl57NhEjRozxH23In/8n/nH9p/7V3+E3/+w/TLtc4kRRSYh4nHhEAIk45ykfEUVEUBXqj6qigIggKAI48eAUnEMEYndk//Fb/uD//Gt8/bf+JtsP3zIc9vQp0feRoY8ce+UYhUEWtOsvaJs1zXLB4tV7Fl/9JkQBJ0izwDcNDnDOIV5wXnDeEYIjhIALIX9nf3wT8CEQGp//OELwiAMngoizuYlW8xVEBOfs30i+1oETRcQjTsi/MlpU94kDUkRSh4tbfP+AP9zg9h/hcAf9HuKAqpKGSFJISVFpYfEKFteob3De41Bcv0f2D8RuS4oRVUgKooIm6PvIsUt0UVi2Du/BX73FX38BbUv/9Ej/9MShTxyl5RAuuQmv2fkrhrBkcIHeCVE9vTQMKiRNRE2kCFEdSYWkglHJ2ZhVSIAKSFK88yyahsvW8WXT8ZVseRsOXDQDi5AIIgQfkLbFhQbnA4hDEUQU13h8syA0C0RhSJGh6+j2O7qnBw53dxxuPrC/+8Rx+0DsD8TkiECXlEFBk4AIqgqqCEoQW7fCN945xAmIInbZxM9a8UFe18ITNd/b31C+VlWSJlDFicM1C8J6zer6mrBc4EJDaJesLq5ZXF7jVivi0PPw8Tu+/t2/w+bjDZoSQn6o2BqP7wQSmnlsGvNsXGXQgC8/5wudg8XVa95/9WOuXl2zvrpm/e4rFtdvwLt8oyP1HZ++/Ybvfv/3ePzuG/qnx3G+ThLeCd5J5oLy7rwXJA+67Cc12UFZEzBZowo4fPDQrgjXb7j66lf4...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot [39m[32m200[39m[90m 2047.705 ms - 2086402[39m [90m{"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy0vVmvbcmW3/UbETHnanZz2sybt+qWq3HJTSHLCPHEEzzRCAkkhMEuKBkhBAjwGw/YPCA+BD2CR3gHhAUSj7ZASBjZBqts32pu3sw8Z5/drb26OWfE4GFEzBlz7bVP5i2LlTp5zl57NhEjRozxH23In/8n/nH9p/7V3+E3/+w/TLtc4kRRSYh4nHhEAIk45ykfEUVEUBXqj6qigIggKAI48eAUnEMEYndk//Fb/uD//Gt8/bf+JtsP3zIc9vQp0feRoY8ce+UYhUEWtOsvaJs1zXLB4tV7Fl/9JkQBJ0izwDcNDnDOIV5wXnDeEYIjhIALIX9nf3wT8CEQGp//OELwiAMngoizuYlW8xVEBOfs30i+1oETRcQjTsi/MlpU94kDUkRSh4tbfP+AP9zg9h/hcAf9HuKAqpKGSFJISVFpYfEKFteob3De41Bcv0f2D8RuS4oRVUgKooIm6PvIsUt0UVi2Du/BX73FX38BbUv/9Ej/9MShTxyl5RAuuQmv2fkrhrBkcIHeCVE9vTQMKiRNRE2kCFEdSYWkglHJ2ZhVSIAKSFK88yyahsvW8WXT8ZVseRsOXDQDi5AIIgQfkLbFhQbnA4hDEUQU13h8syA0C0RhSJGh6+j2O7qnBw53dxxuPrC/+8Rx+0DsD8TkiECXlEFBk4AIqgqqCEoQW7fCN945xAmIInbZxM9a8UFe18ITNd/b31C+VlWSJlDFicM1C8J6zer6mrBc4EJDaJesLq5ZXF7jVivi0PPw8Tu+/t2/w+bjDZoSQn6o2BqP7wQSmnlsGvNsXGXQgC8/5wudg8XVa95/9WOuXl2zvrpm/e4rFtdvwLt8oyP1HZ++/Ybvfv/3ePzuG/qnx3G+ThLeCd5J5oLy7rwXJA+67Cc12UFZEzBZowo4fPDQrgjXb7j66lf4...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform[39m [90m{"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec","actions":[{"action":"longPress","options":{"y":724.5,"x":718,"duration":500}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:touchLongClick",{"x":718,"y":724.5,"duration":500}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:touchLongClick","params":{"x":718,"y":724.5,"duration":500}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: touchLongClick
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][1440,900]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Performing TouchLongClick using element? false x: 718, y: 724, duration: 500
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform [39m[32m200[39m[90m 537.058 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot[39m [90m{}[39m
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 pull /data/local/tmp/screenshot.png "C:\\Users\\liujing1\\AppData\\Local\\Temp\\appium116215-5832-z8y48n.png"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy0vVmvbcmW3/UbETHnanZz2sybt+qWq3HJTSHLCPHEEzzRCAkkhMEuKBkhBAjwGw/YPCA+BD2CR3gHhAUSj7ZASBjZBqts32pu3sw8Z5/drb26OWfE4GFEzBlz7bVP5i2LlTp5zl57NhEjRozxH23In/8n/nH9p/7V3+E3/+w/TLtc4kRRSYh4nHhEAIk45ykfEUVEUBXqj6qigIggKAI48eAUnEMEYndk//Fb/uD//Gt8/bf+JtsP3zIc9vQp0feRoY8ce+UYhUEWtOsvaJs1zXLB4tV7Fl/9JkQBJ0izwDcNDnDOIV5wXnDeEYIjhIALIX9nf3wT8CEQGp//OELwiAMngoizuYlW8xVEBOfs30i+1oETRcQjTsi/MlpU94kDUkRSh4tbfP+AP9zg9h/hcAf9HuKAqpKGSFJISVFpYfEKFteob3De41Bcv0f2D8RuS4oRVUgKooIm6PvIsUt0UVi2Du/BX73FX38BbUv/9Ej/9MShTxyl5RAuuQmv2fkrhrBkcIHeCVE9vTQMKiRNRE2kCFEdSYWkglHJ2ZhVSIAKSFK88yyahsvW8WXT8ZVseRsOXDQDi5AIIgQfkLbFhQbnA4hDEUQU13h8syA0C0RhSJGh6+j2O7qnBw53dxxuPrC/+8Rx+0DsD8TkiECXlEFBk4AIqgqqCEoQW7fCN945xAmIInbZxM9a8UFe18ITNd/b31C+VlWSJlDFicM1C8J6zer6mrBc4EJDaJesLq5ZXF7jVivi0PPw8Tu+/t2/w+bjDZoSQn6o2BqP7wQSmnlsGvNsXGXQgC8/5wudg8XVa95/9WOuXl2zvrpm/e4rFtdvwLt8oyP1HZ++/Ybvfv/3ePzuG/qnx3G+ThLeCd5J5oLy7rwXJA+67Cc12UFZEzBZowo4fPDQrgjXb7j66lf4...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot [39m[32m200[39m[90m 1886.067 ms - 2202090[39m [90m{"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy0vVmvbcmW3/UbETHnanZz2sybt+qWq3HJTSHLCPHEEzzRCAkkhMEuKBkhBAjwGw/YPCA+BD2CR3gHhAUSj7ZASBjZBqts32pu3sw8Z5/drb26OWfE4GFEzBlz7bVP5i2LlTp5zl57NhEjRozxH23In/8n/nH9p/7V3+E3/+w/TLtc4kRRSYh4nHhEAIk45ykfEUVEUBXqj6qigIggKAI48eAUnEMEYndk//Fb/uD//Gt8/bf+JtsP3zIc9vQp0feRoY8ce+UYhUEWtOsvaJs1zXLB4tV7Fl/9JkQBJ0izwDcNDnDOIV5wXnDeEYIjhIALIX9nf3wT8CEQGp//OELwiAMngoizuYlW8xVEBOfs30i+1oETRcQjTsi/MlpU94kDUkRSh4tbfP+AP9zg9h/hcAf9HuKAqpKGSFJISVFpYfEKFteob3De41Bcv0f2D8RuS4oRVUgKooIm6PvIsUt0UVi2Du/BX73FX38BbUv/9Ej/9MShTxyl5RAuuQmv2fkrhrBkcIHeCVE9vTQMKiRNRE2kCFEdSYWkglHJ2ZhVSIAKSFK88yyahsvW8WXT8ZVseRsOXDQDi5AIIgQfkLbFhQbnA4hDEUQU13h8syA0C0RhSJGh6+j2O7qnBw53dxxuPrC/+8Rx+0DsD8TkiECXlEFBk4AIqgqqCEoQW7fCN945xAmIInbZxM9a8UFe18ITNd/b31C+VlWSJlDFicM1C8J6zer6mrBc4EJDaJesLq5ZXF7jVivi0PPw8Tu+/t2/w+bjDZoSQn6o2BqP7wQSmnlsGvNsXGXQgC8/5wudg8XVa95/9WOuXl2zvrpm/e4rFtdvwLt8oyP1HZ++/Ybvfv/3ePzuG/qnx3G+ThLeCd5J5oLy7rwXJA+67Cc12UFZEzBZowo4fPDQrgjXb7j66lf4...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform[39m [90m{"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec","actions":[{"action":"longPress","options":{"y":719,"x":719,"duration":500}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:touchLongClick",{"x":719,"y":719,"duration":500}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:touchLongClick","params":{"x":719,"y":719,"duration":500}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: touchLongClick
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][1440,900]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Performing TouchLongClick using element? false x: 719, y: 719, duration: 500
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform [39m[32m200[39m[90m 554.031 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot[39m [90m{}[39m
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 pull /data/local/tmp/screenshot.png "C:\\Users\\liujing1\\AppData\\Local\\Temp\\appium116215-5832-jx7typ.png"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy0vVmvbcmW3/UbETHnanZz2sybt+qWq3HJTSHLCPHEEzzRCAkkhMEuKBkhBAjwGw/YPCA+BD2CR3gHhAUSj7ZASBjZBqts32pu3sw8Z5/drb26OWfE4GFEzBlz7bVP5i2LlTp5zl57NhEjRozxH23In/8n/nH9p/7V3+E3/+w/TLtc4kRRSYh4nHhEAIk45ykfEUVEUBXqj6qigIggKAI48eAUnEMEYndk//Fb/uD//Gt8/bf+JtsP3zIc9vQp0feRoY8ce+UYhUEWtOsvaJs1zXLB4tV7Fl/9JkQBJ0izwDcNDnDOIV5wXnDeEYIjhIALIX9nf3wT8CEQGp//OELwiAMngoizuYlW8xVEBOfs30i+1oETRcQjTsi/MlpU94kDUkRSh4tbfP+AP9zg9h/hcAf9HuKAqpKGSFJISVFpYfEKFteob3De41Bcv0f2D8RuS4oRVUgKooIm6PvIsUt0UVi2Du/BX73FX38BbUv/9Ej/9MShTxyl5RAuuQmv2fkrhrBkcIHeCVE9vTQMKiRNRE2kCFEdSYWkglHJ2ZhVSIAKSFK88yyahsvW8WXT8ZVseRsOXDQDi5AIIgQfkLbFhQbnA4hDEUQU13h8syA0C0RhSJGh6+j2O7qnBw53dxxuPrC/+8Rx+0DsD8TkiECXlEFBk4AIqgqqCEoQW7fCN945xAmIInbZxM9a8UFe18ITNd/b31C+VlWSJlDFicM1C8J6zer6mrBc4EJDaJesLq5ZXF7jVivi0PPw8Tu+/t2/w+bjDZoSQn6o2BqP7wQSmnlsGvNsXGXQgC8/5wudg8XVa95/9WOuXl2zvrpm/e4rFtdvwLt8oyP1HZ++/Ybvfv/3ePzuG/qnx3G+ThLeCd5J5oLy7rwXJA+67Cc12UFZEzBZowo4fPDQrgjXb7j66lf4...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot [39m[32m200[39m[90m 1933.786 ms - 2234646[39m [90m{"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy0vVmvbcmW3/UbETHnanZz2sybt+qWq3HJTSHLCPHEEzzRCAkkhMEuKBkhBAjwGw/YPCA+BD2CR3gHhAUSj7ZASBjZBqts32pu3sw8Z5/drb26OWfE4GFEzBlz7bVP5i2LlTp5zl57NhEjRozxH23In/8n/nH9p/7V3+E3/+w/TLtc4kRRSYh4nHhEAIk45ykfEUVEUBXqj6qigIggKAI48eAUnEMEYndk//Fb/uD//Gt8/bf+JtsP3zIc9vQp0feRoY8ce+UYhUEWtOsvaJs1zXLB4tV7Fl/9JkQBJ0izwDcNDnDOIV5wXnDeEYIjhIALIX9nf3wT8CEQGp//OELwiAMngoizuYlW8xVEBOfs30i+1oETRcQjTsi/MlpU94kDUkRSh4tbfP+AP9zg9h/hcAf9HuKAqpKGSFJISVFpYfEKFteob3De41Bcv0f2D8RuS4oRVUgKooIm6PvIsUt0UVi2Du/BX73FX38BbUv/9Ej/9MShTxyl5RAuuQmv2fkrhrBkcIHeCVE9vTQMKiRNRE2kCFEdSYWkglHJ2ZhVSIAKSFK88yyahsvW8WXT8ZVseRsOXDQDi5AIIgQfkLbFhQbnA4hDEUQU13h8syA0C0RhSJGh6+j2O7qnBw53dxxuPrC/+8Rx+0DsD8TkiECXlEFBk4AIqgqqCEoQW7fCN945xAmIInbZxM9a8UFe18ITNd/b31C+VlWSJlDFicM1C8J6zer6mrBc4EJDaJesLq5ZXF7jVivi0PPw8Tu+/t2/w+bjDZoSQn6o2BqP7wQSmnlsGvNsXGXQgC8/5wudg8XVa95/9WOuXl2zvrpm/e4rFtdvwLt8oyP1HZ++/Ybvfv/3ePzuG/qnx3G+ThLeCd5J5oLy7rwXJA+67Cc12UFZEzBZowo4fPDQrgjXb7j66lf4...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform[39m [90m{"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec","actions":[{"action":"longPress","options":{"y":758,"x":718,"duration":500}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:touchLongClick",{"x":718,"y":758,"duration":500}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:touchLongClick","params":{"x":718,"y":758,"duration":500}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: touchLongClick
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][1440,900]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Performing TouchLongClick using element? false x: 718, y: 758, duration: 500
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform [39m[32m200[39m[90m 562.728 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot[39m [90m{}[39m
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 pull /data/local/tmp/screenshot.png "C:\\Users\\liujing1\\AppData\\Local\\Temp\\appium116215-5832-328ba1.png"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy8vVmvLUl2HvatiMw9nukOVdXs6mo1PXCAIbQF0RBBinwgYFp+k/6H7TebhA3/DQOE/U7bP8EW9chHCzIMglKTrW52V3dV3ZruGfaQmRHLD2uIyNy5zzm3qqks1D3n5BDjirW+FWsI2iwWDCIQAIABAhhyEZ64ePwGEQHImNwEmOXn9P4zLwIAYpA2jFnamFn+ZwCRGCEQAgUQAOYMonCutNKFIH8HnnuVtE/yO2s/iCBlV89G79vfzPKNNRraWObSfXu/+gYAKJC0dTpOzF5uzgk5MTIBxIwIAlmdzECgUv9kBNjnXIvN+eS9k4vZx2Om2Kc+9tp9uEDI1ognCpydnpl3TqiqHteqECNdztJ3b53OIRGDQGBfGQzGeG0YPQYI1dMTNE0kFT71HjOAIO2Ym79Snjyflufz/2Rj7AP7h4BASENGyknuEAFMo6XONV0DFU2c3re/qVpL5R5g9EBTvgFARtYKAwJI/tP1F5uIECNyzuCUwWCQzhB7BaUNIUgJnKV/YEaMEcvlAjFGZGbklLSNwkNyPY7MOqwMZhKK0Ocsg4WUGcxZlzuDqaILvQci6RkpHRGNCJdAoCB9RdB3qjEt9JkRkLzP8kIAIUhfKSDEiNBExBiwaBe4ublEEyNADM7Sv5wz+n7A3f0O+8MRXdej6zqAgaB8FUQIRIghSNsq/mHzGELhf1MaJCJwZgw5I6eEnNlnyllkPc4VFdDkl1JzWY0xBgQK0N5X7QK2i4jNImDRRLy8ucaHH36I7RZomiz0oHTL3ABcaI4BDGHwlb/b7fDTn/4Mn77ZY0iEYz/g9n4HhBaBGgDAwAmZs/ar6hgBbdMqDQJzPawoV+/U98fXlIO4BBfhh7KuGBSCjD8AY/OLRYvlconNeoXNZiU0YWUpjXHOeLg74Ngl7A4HHIce...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot [39m[32m200[39m[90m 2565.763 ms - 2212110[39m [90m{"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJy8vVmvLUl2HvatiMw9nukOVdXs6mo1PXCAIbQF0RBBinwgYFp+k/6H7TebhA3/DQOE/U7bP8EW9chHCzIMglKTrW52V3dV3ZruGfaQmRHLD2uIyNy5zzm3qqks1D3n5BDjirW+FWsI2iwWDCIQAIABAhhyEZ64ePwGEQHImNwEmOXn9P4zLwIAYpA2jFnamFn+ZwCRGCEQAgUQAOYMonCutNKFIH8HnnuVtE/yO2s/iCBlV89G79vfzPKNNRraWObSfXu/+gYAKJC0dTpOzF5uzgk5MTIBxIwIAlmdzECgUv9kBNjnXIvN+eS9k4vZx2Om2Kc+9tp9uEDI1ognCpydnpl3TqiqHteqECNdztJ3b53OIRGDQGBfGQzGeG0YPQYI1dMTNE0kFT71HjOAIO2Ym79Snjyflufz/2Rj7AP7h4BASENGyknuEAFMo6XONV0DFU2c3re/qVpL5R5g9EBTvgFARtYKAwJI/tP1F5uIECNyzuCUwWCQzhB7BaUNIUgJnKV/YEaMEcvlAjFGZGbklLSNwkNyPY7MOqwMZhKK0Ocsg4WUGcxZlzuDqaILvQci6RkpHRGNCJdAoCB9RdB3qjEt9JkRkLzP8kIAIUhfKSDEiNBExBiwaBe4ublEEyNADM7Sv5wz+n7A3f0O+8MRXdej6zqAgaB8FUQIRIghSNsq/mHzGELhf1MaJCJwZgw5I6eEnNlnyllkPc4VFdDkl1JzWY0xBgQK0N5X7QK2i4jNImDRRLy8ucaHH36I7RZomiz0oHTL3ABcaI4BDGHwlb/b7fDTn/4Mn77ZY0iEYz/g9n4HhBaBGgDAwAmZs/ar6hgBbdMqDQJzPawoV+/U98fXlIO4BBfhh7KuGBSCjD8AY/OLRYvlconNeoXNZiU0YWUpjXHOeLg74Ngl7A4HHIce...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform[39m [90m{"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec","actions":[{"action":"longPress","options":{"y":817,"x":866.5,"duration":500}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:touchLongClick",{"x":866.5,"y":817,"duration":500}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:touchLongClick","params":{"x":866.5,"y":817,"duration":500}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: touchLongClick
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][1440,900]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Performing TouchLongClick using element? false x: 866, y: 817, duration: 500
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform [39m[32m200[39m[90m 542.897 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot[39m [90m{}[39m
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 pull /data/local/tmp/screenshot.png "C:\\Users\\liujing1\\AppData\\Local\\Temp\\appium116215-5832-jvema5.png"
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzsvVuPLUtyHvZF1bp0793du3vfzpkZiqSkB1LiDMekSJmSbFK2KMgPAgT/BAGCYcPvAqwHWb/DECD4ogfbEkRAL4ZkkqJMDSBbsCQThgYCJcDkzJk5l33py+7rqgo/VGVWZGZkVlatWqtX79NxTu9Vl7xEZkZGxheZlUlPioJBhIYYw4iUZ34a1D7Two4lDi+p42dIjk70B0iyth9qGe6TYhLv12WqZ2xCwu+ThmoBN7KITdTdU1/taLnG45CfJivxfbVmwjM7/Z6IgrB6HSh6Jx5iNFH0JnwQrSEyPwQGwMxgzmiGPt6IpKp1Mgye+8qJAUbDh2yDKSiQB8EAgYAo3zINind86n6KogAzsKoqrFarRn78OH49kKm7+Fgb6wGsxKFUQWTkLZDRfwGxfNm2xboC+EiDif0b2WBKczDH24rbtuRWmZAIx24gmxGLZ8vFHIvlXFhqwPnFh5AvrS8OolgBJ7b4OLiIkKZbhEKW5aeJ+0mqyJrhYvqr4EFa1qY92fA6BY+i7RlAUVBTBwzUdW1lTbIbDi/94/NQYj+xKQctIJT5IKNu4JHl/ht/8286TcSe/KjZcFhjdlxsqbCpaQbVzpKmxew/sRCP9EgBxeTkIfWGnaUN6pRAUa/RkHJM57woO0NRfu3gOn2JYmA5MDz7I01HTvvLMlM3mI4cFJyhpR2Ba64bQ6WXF5mIz5vyWn0+rA2zbdRY5Jx4MRspEfch9auPlnrAoHzMqv7m7jkHWtjT+Rw+E3kSUdOdHBBo/pKlmIC2J41KLTUkQR91v5MXneDWu/z1vTkGUARgsHnZOBY3BAYpTJPFlY51uH03fXtGU/Tqc5JMnEk5r0EoDG748HwvSiDtUZz5WcjMlETe77okRcIgZw7YjoDkR3qkQZTbGx4NHUGjPZsb6rF2ZqrH...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- GET /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot [39m[32m200[39m[90m 1880.813 ms - 1502694[39m [90m{"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAAA4QAAAWgCAYAAAAGo40hAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzsvVuPLUtyHvZF1bp0793du3vfzpkZiqSkB1LiDMekSJmSbFK2KMgPAgT/BAGCYcPvAqwHWb/DECD4ogfbEkRAL4ZkkqJMDSBbsCQThgYCJcDkzJk5l33py+7rqgo/VGVWZGZkVlatWqtX79NxTu9Vl7xEZkZGxheZlUlPioJBhIYYw4iUZ34a1D7Two4lDi+p42dIjk70B0iyth9qGe6TYhLv12WqZ2xCwu+ThmoBN7KITdTdU1/taLnG45CfJivxfbVmwjM7/Z6IgrB6HSh6Jx5iNFH0JnwQrSEyPwQGwMxgzmiGPt6IpKp1Mgye+8qJAUbDh2yDKSiQB8EAgYAo3zINind86n6KogAzsKoqrFarRn78OH49kKm7+Fgb6wGsxKFUQWTkLZDRfwGxfNm2xboC+EiDif0b2WBKczDH24rbtuRWmZAIx24gmxGLZ8vFHIvlXFhqwPnFh5AvrS8OolgBJ7b4OLiIkKZbhEKW5aeJ+0mqyJrhYvqr4EFa1qY92fA6BY+i7RlAUVBTBwzUdW1lTbIbDi/94/NQYj+xKQctIJT5IKNu4JHl/ht/8286TcSe/KjZcFhjdlxsqbCpaQbVzpKmxew/sRCP9EgBxeTkIfWGnaUN6pRAUa/RkHJM57woO0NRfu3gOn2JYmA5MDz7I01HTvvLMlM3mI4cFJyhpR2Ba64bQ6WXF5mIz5vyWn0+rA2zbdRY5Jx4MRspEfch9auPlnrAoHzMqv7m7jkHWtjT+Rw+E3kSUdOdHBBo/pKlmIC2J41KLTUkQR91v5MXneDWu/z1vTkGUARgsHnZOBY3BAYpTJPFlY51uH03fXtGU/Tqc5JMnEk5r0EoDG748HwvSiDtUZz5WcjMlETe77okRcIgZw7YjoDkR3qkQZTbGx4NHUGjPZsb6rF2ZqrH...","sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mPOST[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform[39m [90m{"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec","actions":[{"action":"longPress","options":{"y":473,"x":216,"duration":500}},{"action":"release","options":{}}]}[39m
+[36minfo[39m: [debug] Pushing command to appium work queue: ["element:touchLongClick",{"x":216,"y":473,"duration":500}]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:touchLongClick","params":{"x":216,"y":473,"duration":500}}
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Got command action: touchLongClick
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Display bounds: [0,0][1440,900]
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Performing TouchLongClick using element? false x: 216, y: 473, duration: 500
+[36minfo[39m: [debug] [BOOTSTRAP] [debug] Returning result: {"value":true,"status":0}
+[36minfo[39m: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}
+[36minfo[39m: [37m<-- POST /wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/touch/perform [39m[32m200[39m[90m 533.967 ms - 76[39m [90m{"status":0,"value":true,"sessionId":"15eb09c4-b5f0-4d32-a5a1-03673456f6ec"}[39m
+[36minfo[39m: [37m-->[39m [37mGET[39m [37m/wd/hub/session/15eb09c4-b5f0-4d32-a5a1-03673456f6ec/screenshot[39m [90m{}[39m
+[36minfo[39m: [debug] executing cmd: D:\Android\sdk\platform-tools\adb.exe -s 127.0.0.1:62001 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "

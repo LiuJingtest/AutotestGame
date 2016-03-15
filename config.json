@@ -1,0 +1,15 @@
+{
+  "flag":1,
+  "romete_url":"http://192.168.40.25",
+  "app_waittime":30,
+  "script":"script.xls",
+  "sheetname":"脚本1",
+
+    "key值意义":{
+      "flag":"是否使用本机appium服务",
+      "romete_url":"appium连接的url，默认为自己",
+      "app_waittime":"启动driver后的等待时间，如启动游戏后需要一个较长的加载时间才能到登录页面",
+      "script":"脚本所在的excel的名字",
+      "sheetname":"需要执行的excel文件中sheet的名字"
+  }
+}
